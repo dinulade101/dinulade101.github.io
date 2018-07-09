@@ -1,0 +1,196 @@
+html{
+    height:100%;
+}
+body{
+    background-image: url("images/wallpaper.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment:fixed;
+    height: 100%;
+}
+#mainBack{
+    height:80%;
+    width:100%;
+}
+#titleText{
+    margin-top:10px;
+    color: white;
+    text-emphasis: none;
+    text-align:center;
+    font-family: 'Raleway', sans-serif;
+}
+#profilePic{
+
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-image:url('images/profile_pic.png');
+    background-position: center center;
+    background-size:cover;
+    margin-left:auto;
+    margin-right:auto;
+}
+#headContent{
+    position: absolute;
+    width:100%;
+    z-index:10;
+    top: 25%;
+}
+.slide{
+    background-color: white;
+    width: 100%;
+    padding:20px 30px;
+}
+#slide1{
+    margin-top:-100px;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:white;
+    padding: 50px;
+    border: 5px solid black;
+}
+.project{
+    padding: 20px 30px;
+    margin-bottom: 10px;
+}
+.projectImage{
+    box-shadow: 3px;
+    width:200px;
+    margin:10px;
+}
+.socialLogo{
+    width:30px;
+    margin: 5px;
+}
+#socialBand{
+    margin:auto;
+    width: 40%;
+    text-align: center;
+}
+#slide1 h2{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+#slide1 p{
+
+}
+#content{
+    padding:0 30px;
+}
+
+/***** Thank you to https://codepen.io/asistapl/pen/QEAgdA for social media icons *****/
+
+#socialMediaBar {
+    position: absolute;
+    top:10px;
+    align-items: center;
+    align-content: center;
+    font: 16px Roboto, sans-serif;
+    color:white;
+    right:50px;
+}
+
+#socialMediaBar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.c-icon {
+    width:  36px;
+    height: 36px;
+    fill: white;
+    transition: .2s;
+}
+
+.c-link--facebook:hover  { color: #3b5998 }
+.c-link--twitter:hover   { color: #55acee }
+.c-link--google:hover    { color: #dd4b39 }
+.c-link--pinterest:hover { color: #bd081c }
+.c-link--instagram:hover { color: #833ab4 }
+.c-link--snapchat:hover  { color: #fbe00f }
+.c-link--facebook:hover::after  { background: #3b5998 }
+.c-link--twitter:hover::after   { background: #55acee }
+.c-link--google:hover::after    { background: #dd4b39 }
+.c-link--pinterest:hover::after { background: #bd081c }
+.c-link--instagram:hover::after { background: #833ab4 }
+.c-link--snapchat:hover::after  { background: #fbe00f }
+
+.c-link {
+    position: relative;
+    color: #bbb;
+}
+
+.c-link:not(:last-of-type) {
+    margin-right: 15px;
+}
+
+.c-tooltip::before,
+.c-tooltip::after {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -10px);
+    opacity: 0;
+    transition: .2s;
+}
+
+.c-tooltip::before {
+    content: '';
+    bottom: calc(-100% - 2px);
+    border: solid 5px transparent;
+    border-top-color: currentColor;
+}
+
+.c-tooltip::after {
+    content: attr(aria-label);
+    bottom: calc(-100% - 12px);
+    padding: .61em .93em;
+    font-size: .875rem;
+    color: white;
+    border-radius: 3px;
+}
+
+.c-tooltip:hover::before,
+.c-tooltip:hover::after {
+    opacity: 1;
+    transform: translate(-50%);
+}
+
+.pens-link-container {
+    flex-basis: 100%;
+    font-size: .9rem;
+    text-align: center;
+}
+
+.pens-link {
+    margin-bottom: 0;
+    background: white;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, .1);
+    border: none;
+}
+
+/***navbar transparent ***/
+.navbar-trans {
+    background: transparent; 
+    position: absolute;
+}
+.navbar-trans a{
+    font-family: 'Raleway', sans-serif;
+    color:white;
+}
+  
+  a.navbar-brand, a.logo {
+    color: #fff !important;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 0; }
+  
+  a.logo:hover, a.logo:active, a.logo:focus {
+    text-decoration: none; }
+  
+  li.nav-item .btn {
+    margin-top: .2rem;
+    margin-left: .4rem; }
+  li.nav-item .btn-white {
+    color: #46484a; }
