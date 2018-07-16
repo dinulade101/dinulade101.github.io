@@ -2,7 +2,7 @@ html{
     height:100%;
 }
 body{
-    background-image: url("images/wallpaper.jpg");
+    background-image: url("images/abstract-astro-astronomy-956999.jpg");
     background-size: cover;
     background-position: center center;
     background-attachment:fixed;
@@ -50,13 +50,25 @@ body{
     padding: 50px;
     border: 5px solid black;
 }
+.slide3{
+    background-color:#42485d; 
+    background-color:transparent;
+    color:white;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.slide3 h4{
+}
 .project{
     padding: 20px 30px;
     margin-bottom: 10px;
 }
 .projectImage{
     box-shadow: 3px;
-    width:200px;
+    width:250px;
     margin:10px;
 }
 .socialLogo{

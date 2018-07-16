@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122306630-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -35,7 +35,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
+                    <a class="nav-link" href="#target">Projects</a>
                 </li>
             </ul>
         </div>
@@ -45,9 +45,9 @@
             <div id="profilePic"></div>
             <h1 id="titleText">Dinula De Silva</h1>
             <div id="socialBand">
-                    <img class="socialLogo" src="images/close-envelope.png">
-                        <img class="socialLogo" src="images/twitter-logo-silhouette.png">
-                        <img class="socialLogo" src="images/linkedin-logo.png">
+                    <a href="mailto:dinula@dinuladesilva.com"><img class="socialLogo" src="images/close-envelope.png"></a>
+                        <a href=""></a><img class="socialLogo" src="images/twitter-logo-silhouette.png">
+                        <a href="https://www.linkedin.com/in/dinula-manimeldura-de-silva-408748126/"><img class="socialLogo" src="images/linkedin-logo.png"></a>
             </div>
         </div>
     </div>
@@ -107,6 +107,7 @@
         <hr> Hi, I'm Dinula, a third year Software Engineering student at the University of Alberta. 
     </div>
     <div class="slide">
+        <a id="target"></a>
         <h4>Projects</h4>
         <hr>
         <div class="project" style="background-color:#42485d; color:white;">
@@ -128,81 +129,142 @@
             </div>
 
         </div>
-        <div class="project" style="background-color:#dddddd; color:black;">
-                <h5>Slack Bot Apartment Finder</h5>
+            <div class="project" style="background-color:#dddddd; color:black;">
+                <h5>University of Alberta Engineering Students Society Geer Pass App</h5>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="description">
-                            Apartment Finder What is this? Apartment Finder is a python bot that scrapes Kijiji.com in order to find apartments within
-                            a certain price range.
+                            
+                            Geer Pass offers UAlberta Engineering Students the opportunity to earn points, and 
+                            consequently prizes for attending various ESS Events. Moreover, the app's social integration 
+                            through Facebook allows students to compete against each other for points in a leaderboard setting.
+                             In addition, the Facebook integration allows students to form deeper bonds with their peers, 
+                             as well as discover new friends through Geer Pass's online leaderboards. Other awesome features
+                              include the ability to RSVP for ESS events and find fellow engineering students on Instagram, 
+                              Snapchat, Twitter, Linkedin and Facebook.
                         </div>
                     </div>
                     <div class="col-md-6">
     
                         <div class="projectImageSection">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img class="projectImage" src="images/Projects/ApartmentFinder/Screenshot1.png">
-                                </div>
-                                <div class="col-md-4">
-                                    <img class="projectImage" src="images/Projects/ApartmentFinder/Screenshot1.png">
-                                </div>
-                            </div>
+                                    <img class="projectImage" style="width:200px" src="images/Projects/essapp/unnamed-3.png">
+                                    <img class="projectImage" style="width:200px" src="images/Projects/essapp/unnamed.png">
                         </div>
                     </div>
                 </div>
-    
-            </div>
-            <div class="project" style="background-color:#dddddd; color:black;">
-                    <h5>Slack Bot Apartment Finder</h5>
+        
+                </div>
+
+                <div class="project" style="background-color:#42485d; color:white;">
+                    <h5>Clockuino - Arduino Alarm Clock</h5>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="description">
-                                Apartment Finder What is this? Apartment Finder is a python bot that scrapes Kijiji.com in order to find apartments within
-                                a certain price range.
+                                An alarm clock build using with C++, Arduino, and Adafruit Display.
+                                Ensured storage of previous alarms by writing alarm data to Arduino's EEPROM.
                             </div>
                         </div>
                         <div class="col-md-6">
         
                             <div class="projectImageSection">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <img class="projectImage" src="images/Projects/ApartmentFinder/Screenshot1.png">
-                                    </div>
-                                    <div class="col-md-4">
-                                        <img class="projectImage" src="images/Projects/ApartmentFinder/Screenshot1.png">
-                                    </div>
-                                </div>
+                                <img class="projectImage" src="images/Projects/Clockuino/homescreen.jpeg">
+                                <img class="projectImage" src="images/Projects/Clockuino/viewAlarmsScreen.jpeg">
                             </div>
                         </div>
                     </div>
+            
+                    </div>
+
+    </div>
+
+    <div class="slide">
+        <h4><a onclick="$('.archivedProjects').slideToggle()">Archived Projects (Click here to see)</a></h4>
+        <hr>
+        <div class="archivedProjects" style="display:none">
+        <div class="project" style="background-color:#42485d; color:white;">
+            <h5>iGEM Part Searcher App</h5>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="description">
+                        In the lab, many of my peers and advisors use smartphones to view the iGEM Parts Registry website, 
+                        and find information about genetic parts they are using. However, they found it inconvenient to use 
+                        the registry website on their smartphones, because it was difficult navigate and find information. 
+                        Therefore, I created an app that could extract the important information from the registry website, 
+                        and display it in a simple format. I was able to give back to the international iGEM community, as I 
+                        published my app on the AppStore and released its source code to the public domain.
+                    </div>
+                </div>
+                <div class="col-md-6">
+
+                    <div class="projectImageSection">
+                                <img class="projectImage" style="width:500px" src="images/Projects/igemApp/LethHS2014_App_slide.png">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+            <div class="project" style="background-color:#dddddd; color:black;">
+                <h5>Run! Destroy! Run! - Arcade iOS Game</h5>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="description">
+                            
+                            The name pretty much says everything. Play as a penguin running and while you are 
+                            running you need to overcome obstacle by dodging or destroying them. The objective 
+                            of the game is to survive the longest and get the best score without dying. Luckily, if
+                             you like playing on a variety of maps, you can pick the map you want to play on. Developed in Objective-C
+                            and Cocos2D. Read the app review on <a href="https://www.raywenderlich.com/11453/readers-app-reviews-april-2012">Raywenderlich.com</a>.
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+    
+                        <div class="projectImageSection">
+
+                                    <img class="projectImage" src="images/Projects/RunDestroyRun/1334797833.jpg">
+                                        <img class="projectImage" src="images/Projects/RunDestroyRun/513917_orig.png">
+                        </div>
+                    </div>
+                </div>
         
                 </div>
+
                 <div class="project" style="background-color:#dddddd; color:black;">
-                        <h5>Slack Bot Apartment Finder</h5>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="description">
-                                    Apartment Finder What is this? Apartment Finder is a python bot that scrapes Kijiji.com in order to find apartments within
-                                    a certain price range.
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-            
-                                <div class="projectImageSection">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <img class="projectImage" src="images/Projects/ApartmentFinder/Screenshot1.png">
-                                        </div>
-                                        <div class="col-md-4">
-                                            <img class="projectImage" src="images/Projects/ApartmentFinder/Screenshot1.png">
-                                        </div>
-                                    </div>
-                                </div>
+                    <h5>Unscramble This - Puzzle Game</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="description">
+                                
+                                Unscramble This is slider puzzle game in which an image is split into scrambled tiles with one tile missing and 
+                                you need to slide the tiles to form the original image. It has numerous features such as:
+                                <br>
+                                <ul>
+                                    <li>Create your Own Custom Puzzle with your own pictures, countdown time, and puzzle size.</li>
+                                    <li>5 Different Level Modes including: Easy, Intermediate, Hard, Challenge, and Custom.</li>
+                                    <li>Game Center Achievement support to make the game even more fun</li>
+                                    <li>Game Center Leader board support so you can compete with people from aound the world for having the fastest puzzle solving skills</li>
+                                </ul>
+                                Developed using Objective-C and Cocos2d
+                                
+                                
+                                
                             </div>
                         </div>
+                        <div class="col-md-6">
+        
+                            <div class="projectImageSection">
+                                <img class="projectImage" src="images/Projects/unscramblethis/2645343_orig.png">
+                                <img class="projectImage" src="images/Projects/unscramblethis/5596225.png">
+                            </div>
+                        </div>
+                    </div>
             
                     </div>
+
+                    </div>
+
+    </div>
+    <div class="slide slide3"  style="">
+        <h4>Thank you for visiting!</h4>
     </div>
 </body>
 
