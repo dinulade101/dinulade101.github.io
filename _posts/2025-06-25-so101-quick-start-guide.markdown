@@ -26,7 +26,7 @@ The total cost was around $300 USD plus \~$100 USD for shipping. It took about 3
 
 [Link to kit](https://www.google.com/search?q=https://www.example.com/kit)
 
-![Different packages](/assets/images/so101_wow_robitics_configs.png)
+<img src="/assets/images/so101_wow_robitics_configs.png" alt="Different packages" width="300" style="display: block; margin: 0 auto;">
 
 -----
 
